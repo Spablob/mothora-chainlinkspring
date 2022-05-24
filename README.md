@@ -27,7 +27,9 @@ The main tech we used for the game was Unreal Engine 5. Most assets used were cr
 
 Regarding the contracts, these were developed in Solidity using hardhat and ethers.js. Tests were provided for the main functions exposed in the proof of concept.
 
-Lastly, we employed a way to connect the Game Engine and the deployed contracts on Rinkeby. The final result is the player being able to log in into the game using his favourite mobile wallet by simply pointing the camera at a game QR code and connecting using Wallet Connect. We have also developed a C++ Unreal Engine module for players to host multiplayer sessions and for other players to join these sessions.
+Our contracts use the randomness powered by Chainlink VRF V2 integrated in the player quest rewards module. It is used to help determine the rewards the player gets from succesfuly completing a quest. We believe there is a lot of potential to use chainlink VRF in other areas of the Unreal game that require it.
+
+Lastly, we employed a way to connect the Game Engine and the deployed contracts on Polygon Mumbai. The final result is the player being able to log in into the game using his favourite mobile wallet by simply pointing the camera at a game QR code and connecting using Wallet Connect. We have also developed a C++ Unreal Engine module for players to host multiplayer sessions and for other players to join these sessions, using Steam servers as the backend.
 
 ## What's Next
 

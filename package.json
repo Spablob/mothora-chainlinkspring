@@ -6,6 +6,7 @@
   "scripts": {
     "test": "hardhat compile && hardhat test",
     "test:crazy": "hardhat compile && hardhat test test/test-crazy.ts",
+    "test:mock": "hardhat compile && hardhat test test/test-mock.ts",
     "local": "hardhat run --network hardhatevm scripts/deploy.ts",
     "arbitrumRinkeby": "hardhat run --network arbitrumRinkeby scripts/deploy.ts",
     "rinkeby": "hardhat run --network rinkeby scripts/deploy.ts",
@@ -13,6 +14,7 @@
     "ropsten": "hardhat run --network ropsten scripts/deploy.ts",
     "goerli": "hardhat run --network goerli scripts/deploy.ts",
     "kovan": "hardhat run --network kovan scripts/deploy.ts",
+    "mumbai": "hardhat run --network mumbai scripts/deploy.ts",
     "deploy": "hardhat run --network hardhatevm scripts/deploy.ts",
     "stake": "hardhat run --network hardhatevm scripts/stake.ts",
     "stake:rinkeby": "hardhat run --network rinkeby scripts/stake.ts",

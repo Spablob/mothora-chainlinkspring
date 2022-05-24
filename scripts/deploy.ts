@@ -25,7 +25,7 @@ async function main() {
   let vault: MothoraVault;
   let token: Essence;
   const signer = (await ethers.getSigners())[1];
-  const subscriptionId = 4935;
+  const subscriptionId = 371;
   console.log({ Account: signer.address });
 
   // Deploy Player Contract

@@ -7,7 +7,7 @@ import {VRFCoordinatorV2Interface} from "@chainlink/contracts/src/v0.8/interface
 import {VRFConsumerBaseV2} from "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 import {GameItems} from "./GameItems.sol";
 
-contract Player is Ownable {
+contract Player is VRFConsumerBaseV2, Ownable {
     //===============Storage===============
 
     enum Faction {
@@ -60,7 +60,7 @@ contract Player is Ownable {
 
     address s_owner;
 
-    mapping(uint256 => uint256) randomIdToRequestor;
+    mapping(uint256 => address) randomIdToRequestor;
 
     //===============Functions=============
     constructor(uint64 subscriptionId) VRFConsumerBaseV2(vrfCoordinator) {
@@ -156,18 +156,18 @@ contract Player is Ownable {
         random = (randomWords[0] % 1000) + 1;
 
         if (random >= 800) {
-            gameItemsContract.mintVaultParts(msg.sender, 5);
+            gameItemsContract.mintVaultParts(player, 5);
         } else if (random < 800 && random >= 600) {
-            gameItemsContract.mintVaultParts(msg.sender, 4);
+            gameItemsContract.mintVaultParts(player, 4);
         } else if (random < 600 && random >= 400) {
-            gameItemsContract.mintVaultParts(msg.sender, 3);
+            gameItemsContract.mintVaultParts(player, 3);
         } else if (random < 400 && random >= 200) {
-            gameItemsContract.mintVaultParts(msg.sender, 2);
+            gameItemsContract.mintVaultParts(player, 2);
         } else if (random < 200) {
-            gameItemsContract.mintVaultParts(msg.sender, 1);
+            gameItemsContract.mintVaultParts(player, 1);
         }
 
-        players[msg.sender].characterFullofRewards = false;
+        players[player].characterFullofRewards = false;
     }
 
     function getFaction(address _recipient) public view returns (uint256) {
