@@ -1,0 +1,29 @@
+{
+  "oasis": {
+    "Player": "0xc00f0DC87784Bf71E61ae3b2F516a05F5BBb93B8",
+
+    "GameItems": "0x2Dd289f7E9b7ebeA4Ca5e4eb64830eA9Bb3DF344",
+
+    "Essence": "0xc2BAC976B130316C9aFD581641651b81C5843069",
+
+    "MothoraVault": "0x20d7e5D10B16b3fcA8Ea2EE93bb704C8B5894Ad5"
+  },
+  "rinkeby": {
+    "Player": "0xb8feFa7F84F365587ca5dE132c02671169D0c324",
+
+    "GameItems": "0x3F5fAb78888f61f091bd239195430fadbaDFbF0d",
+
+    "Essence": "0x633f059b8D73081AbCCB36451Cba34B1Dc83822d",
+
+    "MothoraVault": "0xC007A4D0999d9e99c6baB8A8d01C2DBE8af7ec58"
+  },
+  "arbitrumRinkeby": {
+    "Player": "0x4Bc5fd741d384A8E65AED56D8E1e45B46d4BfED5",
+
+    "GameItems": "0x03aE3dfc6D36a84522BB4E5bf30682106Fbe7Ce6",
+
+    "Essence": "0xf2d9012495218Ce81730A73F22300A112bA3a5E8",
+
+    "MothoraVault": "0x4d22Bfe8De6B4F508B4335C7540716669864dc81"
+  }
+}
