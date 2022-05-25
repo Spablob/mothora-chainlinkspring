@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [master, dev]
+    branches: [main, dev]
   pull_request:
-    branches: [master, dev]
+    branches: [main, dev]
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Run Game Mock Tests
-        run: yarn test
+        run: yarn test:mock
         env:
           MNEMONIC: ${{ secrets.MNEMONIC }}
           ALCHEMY_TOKEN: ${{ secrets.ALCHEMY_TOKEN }}
