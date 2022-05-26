@@ -186,6 +186,18 @@ contract MothoraVault is Ownable, ReentrancyGuard, ERC1155Holder {
         return (balance, stakedBalance, pendingRewards);
     }
 
+    function getPlayerVaultPartsBalance(address _player) external view returns (uint256 playerVaultPartsBalance) {
+        playerVaultPartsBalance = playerStakedPartsBalance[_player];
+
+        return playerVaultPartsBalance;
+    }
+
+    function getFactionVaultPartsBalance(uint256 _faction) external view returns (uint256 factionVaultPartsBalance) {
+        factionVaultPartsBalance = factionPartsBalance[_faction];
+
+        return factionVaultPartsBalance;
+    }
+
     function _stakeTokens(uint256 _amount) internal {
         uint256 initialStakedAmount = stakedESSBalance[msg.sender];
 
