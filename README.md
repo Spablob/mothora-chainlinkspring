@@ -64,4 +64,4 @@ From a roadmap perspective, there are two main game modes we intend to build:
 - Filecoin - *Bonus* Gaming, Metaverse, Daos & NFTs (Oh My!) - $7,500 | The Game uses filecoin is used for NFT storage and IPFS used for NFT interactions.
 - Filecoin - Runners up - $12,500 | The Game uses filecoin is used for NFT storage and IPFS used for NFT interactions.
 
-- Polygon Gaming Track - $10,000 | We have deployed the game on testnet.
+- Polygon Gaming Track - $10,000 | We have deployed the game on Mumbai testnet.
