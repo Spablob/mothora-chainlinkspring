@@ -1,13 +1,3 @@
-## Prizes we are applying to
-
-- Chainlink NFT & Gaming - $25,000
-- Chainlink Women in Tech Prize - $20,000
-
-- Filecoin - *Bonus* Gaming, Metaverse, Daos & NFTs (Oh My!) - $7,500
-- Filecoin - Runners up - $12,500
-
-- Polygon Gaming Track - $10,000 
-
 ## Inspiration
 
 **Mothora** is born out of our team’s belief that Web3 should become part of everyone’s daily life so that we all share in the rewards of the remarkable breakthroughs happening in this space. We want to abstract DeFi complexity and allow regular people to enjoy its rewards while immersing themselves in an online RPG game. 
@@ -65,3 +55,15 @@ From a roadmap perspective, there are two main game modes we intend to build:
 1) Version 1.0 - Arena - A closed map where two small teams face off in a MOBA-style game on a short time window battle.
 
 2) Version 2.0 - Battlegrounds - An open map where three teams face off on a weeklong battle with a large number of players on each team that fight continuously across timezones for map control.
+
+## Prizes we are applying to
+
+- Chainlink NFT & Gaming - $25,000 - We are building at the instersection of Gaming, Defi and NFTs
+- Chainlink Women in Tech Prize - $20,000 - CEO is a women (Mariana Rodrigues).
+
+- Filecoin - *Bonus* Gaming, Metaverse, Daos & NFTs (Oh My!) - $7,500
+- Filecoin - Runners up - $12,500
+The Game uses filecoin is used for NFT storage and IPFS used for NFT interactions.
+
+- Polygon Gaming Track - $10,000
+We have deployed the game on testnet.
