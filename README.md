@@ -59,7 +59,7 @@ From a roadmap perspective, there are two main game modes we intend to build:
 ## Prizes we are applying to
 
 - Chainlink NFT & Gaming - $25,000 | We are building at the instersection of Gaming, Defi and NFTs
-- Chainlink Women in Tech Prize | $20,000 - CEO is a women (Mariana Rodrigues).
+- Chainlink Women in Tech Prize - $20,000 | CEO is a women (Mariana Rodrigues).
 
 - Filecoin - *Bonus* Gaming, Metaverse, Daos & NFTs (Oh My!) - $7,500 | The Game uses filecoin is used for NFT storage and IPFS used for NFT interactions.
 - Filecoin - Runners up - $12,500 | The Game uses filecoin is used for NFT storage and IPFS used for NFT interactions.
