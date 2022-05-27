@@ -1,4 +1,4 @@
-## Prizes we are applying
+## Prizes we are applying to
 
 - Chainlink NFT & Gaming - $25,000
 - Chainlink Women in Tech Prize - $20,000
