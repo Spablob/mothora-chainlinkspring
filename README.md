@@ -1,3 +1,14 @@
+## Prizes we are applying
+
+- Chainlink NFT & Gaming - $25,000
+- Chainlink Women in Tech Prize - $20,000
+
+- Filecoin - *Bonus* Gaming, Metaverse, Daos & NFTs (Oh My!) - $7,500
+- Filecoin - Runners up - $12,500
+
+- Polygon Gaming Track - $10,000 
+- Avalanche Prize - $25,000
+
 ## Inspiration
 
 **Mothora** is born out of our team’s belief that Web3 should become part of everyone’s daily life so that we all share in the rewards of the remarkable breakthroughs happening in this space. We want to abstract DeFi complexity and allow regular people to enjoy its rewards while immersing themselves in an online RPG game. 
