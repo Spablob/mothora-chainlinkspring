@@ -16,14 +16,13 @@ async function main() {
   console.log({ Account: signer.address });
 
   const vaultFactory = await ethers.getContractFactory('MothoraVault');
-  vault = await vaultFactory.connect(signer).attach('0xC007A4D0999d9e99c6baB8A8d01C2DBE8af7ec58');
+  vault = await vaultFactory.connect(signer).attach('0x0a9d696b831361ae7725F71164EB0Ae6cF98Aa9F');
 
   // Deploy Player Contract
   //await waitForTx(await vault.connect(signer).distributeRewards());
 
   async function execute1(delay: number) {
-    console.log(1);
-    // I use axios like: axios.get('/user?ID=12345').then
+    console.log('#### Distributing Rewards ####');
     await waitForTx(await vault.connect(signer).distributeRewards());
     setTimeout(() => execute1(delay), delay);
   }
