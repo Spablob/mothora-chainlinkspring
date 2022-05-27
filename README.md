@@ -29,7 +29,7 @@ Mothora follows a model that incentivizes honing skills in battle and the employ
 
 ## What we built
 
-There 3 main components to the development of the Proof-of-Concept:
+There are 5 main components to the development of the Proof-of-Concept:
 
 1) **Smart contracts** - Main Interactions:
 
@@ -37,11 +37,13 @@ There 3 main components to the development of the Proof-of-Concept:
 - Stake, Unstake, Reward calculation, and Claiming rewards
 - Allows going on a quest, which rewards users with NFTs that increase token rewards
 
-2) **Unreal Engine environment** - Built the 3D world where the player makes its in-game actions
+2) **Chainlink Implementation** The game requires access to true randomness to effectively work. The contracts are requesting random numbers from Chainlink.
 
-3) **Unreal Engine multiplayer** - Allows for multiple characters on the same server in real-time
+3) **Unreal Engine environment** - Built the 3D world where the player makes its in-game actions
 
-4) **Unreal Engine <-> Web 3 Integration** - Built the connection between the Smart contracts and the Unreal Engine Environment that allows the player to trigger blockchain transactions from within the game window
+4) **Unreal Engine multiplayer** - Allows for multiple characters on the same server in real-time
+
+5) **Unreal Engine <-> Web 3 Integration** - Built the connection between the Smart contracts and the Unreal Engine Environment that allows the player to trigger blockchain transactions from within the game window
 
 
 ## What's next for Mothora
