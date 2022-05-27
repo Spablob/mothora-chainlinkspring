@@ -7,7 +7,6 @@
 - Filecoin - Runners up - $12,500
 
 - Polygon Gaming Track - $10,000 
-- Avalanche Prize - $25,000
 
 ## Inspiration
 
