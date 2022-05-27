@@ -29,21 +29,23 @@ Mothora follows a model that incentivizes honing skills in battle and the employ
 
 ## What we built
 
-There are 5 main components to the development of the Proof-of-Concept:
-
-1) **Smart contracts** - Main Interactions:
+There are 6 main components to the development of the Proof-of-Concept:
+1) **Polygon Mumbai Testnet** - We elected Polygon as our network of choice for this hackathon due to its speedy transactions and available integration with Chainlink VRF. Many Blockchain games are selecting Polygon as their network so this is the choice that makes the most sense
+2
+3) **Smart contracts** - Main Interactions:
 
 - Join a Faction and mint the Character
 - Stake, Unstake, Reward calculation, and Claiming rewards
-- Allows going on a quest, which rewards users with NFTs that increase token rewards
+- Allows going on a quest, which rewards users with a random number of Vault Parts NFTs that increase token rewards
+- Characters of different factions compete for the rewards pool as they accrue more Essence or Vault Parts
 
-2) **Chainlink Implementation** The game requires access to true randomness to effectively work. The contracts are requesting random numbers from Chainlink.
+3) **Chainlink Implementation** The game requires access to true randomness to effectively work and be fair when distributing the Vault Parts NFTs. The contracts in Polygon Mumbai are requesting random numbers from Chainlink.
 
-3) **Unreal Engine environment** - Built the 3D world where the player makes its in-game actions
+4) **Unreal Engine environment** - Built the 3D world where the player makes its in-game actions
 
-4) **Unreal Engine multiplayer** - Allows for multiple characters on the same server in real-time
+5) **Unreal Engine multiplayer** - Allows for multiple characters on the same server in real-time
 
-5) **Unreal Engine <-> Web 3 Integration** - Built the connection between the Smart contracts and the Unreal Engine Environment that allows the player to trigger blockchain transactions from within the game window
+6) **Unreal Engine <-> Web 3 Integration** - Built the connection between the Smart contracts and the Unreal Engine Environment that allows the player to trigger blockchain transactions from within the game window
 
 
 ## What's next for Mothora
