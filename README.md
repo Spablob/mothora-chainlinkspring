@@ -31,8 +31,8 @@ Mothora follows a model that incentivizes honing skills in battle and the employ
 
 There are 6 main components to the development of the Proof-of-Concept:
 1) **Polygon Mumbai Testnet** - We elected Polygon as our network of choice for this hackathon due to its speedy transactions and available integration with Chainlink VRF. Many Blockchain games are selecting Polygon as their network so this is the choice that makes the most sense
-2
-3) **Smart contracts** - Main Interactions:
+
+2) **Smart contracts** - Main Interactions:
 
 - Join a Faction and mint the Character
 - Stake, Unstake, Reward calculation, and Claiming rewards
@@ -57,13 +57,3 @@ From a roadmap perspective, there are two main game modes we intend to build:
 1) Version 1.0 - Arena - A closed map where two small teams face off in a MOBA-style game on a short time window battle.
 
 2) Version 2.0 - Battlegrounds - An open map where three teams face off on a weeklong battle with a large number of players on each team that fight continuously across timezones for map control.
-
-## Prizes we are applying to
-
-- Chainlink NFT & Gaming - $25,000 | We are building at the instersection of Gaming, Defi and NFTs
-- Chainlink Women in Tech Prize - $20,000 | CEO is a women (Mariana Rodrigues).
-
-- Filecoin - *Bonus* Gaming, Metaverse, Daos & NFTs (Oh My!) - $7,500 | The Game uses filecoin is used for NFT storage and IPFS used for NFT interactions.
-- Filecoin - Runners up - $12,500 | The Game uses filecoin is used for NFT storage and IPFS used for NFT interactions.
-
-- Polygon Gaming Track - $10,000 | We have deployed the game on Mumbai testnet.
