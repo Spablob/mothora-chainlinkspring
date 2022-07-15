@@ -1,6 +1,6 @@
 ## Inspiration
 
-**Mothora** is born out of our team’s belief, led by our female CEO, that Web3 should become part of everyone’s daily life so that we all share in the rewards of the remarkable breakthroughs happening in this space. We want to abstract DeFi complexity and allow regular people to enjoy its rewards while immersing themselves in an online RPG game. 
+**Mothora** is born out of our team’s belief that Web3 should become part of everyone’s daily life so that we all share in the rewards of the remarkable breakthroughs happening in this space. We want to abstract DeFi complexity and allow regular people to enjoy its rewards while immersing themselves in an online RPG game. 
 
 ## Overview
 
