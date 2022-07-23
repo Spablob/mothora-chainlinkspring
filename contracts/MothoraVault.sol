@@ -87,6 +87,7 @@ contract MothoraVault is Ownable, ReentrancyGuard, ERC1155Holder {
 
         stakedESSBalance[msg.sender] -= _amount;
         totalStakedBalance -= _amount;
+        essenceInterface.safeTransfer(msg.sender, _amount);
     }
 
     function contributeVaultParts(uint256 _amount) external nonReentrant {
