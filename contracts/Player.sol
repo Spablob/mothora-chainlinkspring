@@ -104,8 +104,6 @@ contract Player is VRFConsumerBaseV2, Ownable {
             players[msg.sender].faction = Faction.DOC;
             totalFactionMembers[3] += 1;
         }
-        // TODO burn all vault part NFTs this wallet has on it.
-        // Joao: instead of burning they could be given away to their current faction
     }
 
     function mintCharacter() public {
