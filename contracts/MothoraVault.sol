@@ -98,10 +98,10 @@ contract MothoraVault is Ownable, ReentrancyGuard, ERC1155Holder {
         );
 
         // Transfer from player to Staking Contract
-        gameItemsContract.safeTransferFrom(msg.sender, address(this), 0, _amount, "");
         playerStakedPartsBalance[msg.sender] += _amount;
         factionPartsBalance[playerContract.getFaction(msg.sender)] += _amount;
         totalVaultPartsContributed += _amount;
+        gameItemsContract.safeTransferFrom(msg.sender, address(this), 0, _amount, "");
     }
 
     function distributeRewards() external onlyOwner {
