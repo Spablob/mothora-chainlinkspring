@@ -30,7 +30,7 @@ Mothora follows a model that incentivizes honing skills in battle and the employ
 ## What we built
 
 There are 6 main components to the development of the Proof-of-Concept:
-1) **Polygon Mumbai Testnet** - We elected Polygon as our network of choice for this hackathon due to its speedy transactions and available integration with Chainlink VRF. Many Blockchain games are selecting Polygon as their network so this is the choice that makes the most sense
+1) **Polygon Mumbai Testnet** - We elected Polygon as our network of choice for this hackathon due to its speedy transactions and available integration with Chainlink VRF. 
 
 2) **Smart contracts** - Main Interactions:
 
