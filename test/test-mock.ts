@@ -5,7 +5,6 @@ import { GameItems } from '../typechain-types';
 import { MockPlayer } from '../typechain-types';
 import { MothoraVault } from '../typechain-types';
 import { Essence } from '../typechain-types';
-import { BigNumber } from 'bignumber.js';
 
 describe('MockInteractions', async () => {
   let player: MockPlayer;
@@ -370,17 +369,11 @@ describe('MockInteractions', async () => {
       await vault.connect(accounts[8]).claimEpochRewards(false);
       await vault.connect(accounts[9]).claimEpochRewards(false);
 
+      /*
       // console logs
       console.log({ epochRewards: await vault.epochRewards() });
       console.log({ epochDuration: await vault.epochDuration() });
       console.log({ totalESSstaked: await vault.totalStakedBalance() });
-      console.log({ maxedfactor1: await vault.maxedFactor1() });
-      console.log({ maxedfactor2: await vault.maxedFactor2() });
-      console.log({ maxedfactor3: await vault.maxedFactor3() });
-
-      console.log({ factor1: await vault.factor1() });
-      console.log({ factor2: await vault.factor2() });
-      console.log({ factor3: await vault.factor3() });
 
       console.log({ 'rewardsToClaim 5': await vault.connect(accounts[5]).RewardsBalance(accounts[5].address) });
       console.log({ 'rewardsToClaim 6': await vault.connect(accounts[6]).RewardsBalance(accounts[6].address) });
@@ -393,6 +386,7 @@ describe('MockInteractions', async () => {
       console.log({ 'playerBal 7': await token.connect(accounts[7]).balanceOf(accounts[7].address) });
       console.log({ 'playerBal 8': await token.connect(accounts[8]).balanceOf(accounts[8].address) });
       console.log({ 'playerBal 9': await token.connect(accounts[9]).balanceOf(accounts[9].address) });
+      */
     });
 
     it('It reverts if the Owner tries to distribute more than once in the same epoch', async () => {
@@ -405,14 +399,14 @@ describe('MockInteractions', async () => {
       await ethers.provider.send('evm_increaseTime', [601]); // add 601 seconds
       await vault.connect(accounts[0]).distributeRewards();
 
+      /*
       console.log({ epochRewards: await vault.epochRewards() });
-      console.log({ maxedfactor1: await vault.maxedFactor1() });
-      console.log({ factor1: await vault.factor1() });
       console.log({ 'rewardsToClaim 5': await vault.connect(accounts[5]).RewardsBalance(accounts[5].address) });
       console.log({ 'rewardsToClaim 6': await vault.connect(accounts[6]).RewardsBalance(accounts[6].address) });
       console.log({ 'rewardsToClaim 7': await vault.connect(accounts[7]).RewardsBalance(accounts[7].address) });
       console.log({ 'rewardsToClaim 8': await vault.connect(accounts[8]).RewardsBalance(accounts[8].address) });
       console.log({ 'rewardsToClaim 9': await vault.connect(accounts[9]).RewardsBalance(accounts[9].address) });
+      */
     });
   });
 });
