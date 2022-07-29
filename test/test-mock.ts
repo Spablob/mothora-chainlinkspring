@@ -391,7 +391,7 @@ describe('MockInteractions', async () => {
 
     it('It reverts if the Owner tries to distribute more than once in the same epoch', async () => {
       await expect(vault.connect(accounts[0]).distributeRewards()).to.be.revertedWith(
-        'The player has already claimed in this epoch'
+        'The rewards have already been distributed in this epoch'
       );
     });
 
