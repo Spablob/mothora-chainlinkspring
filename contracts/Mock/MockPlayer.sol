@@ -23,6 +23,7 @@ contract MockPlayer is Player {
         address player = randomIdToRequestor[requestId];
 
         random = (randomWords[0] % 1000) + 1;
+        players[player].characterFullofRewards = false;
 
         if (random >= 800) {
             gameItemsContract.mintVaultParts(player, 5);
@@ -35,7 +36,5 @@ contract MockPlayer is Player {
         } else if (random < 200) {
             gameItemsContract.mintVaultParts(player, 1);
         }
-
-        players[player].characterFullofRewards = false;
     }
 }
