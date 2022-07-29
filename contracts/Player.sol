@@ -115,11 +115,6 @@ contract Player is VRFConsumerBaseV2, Ownable {
         gameItemsContract.mintCharacter(msg.sender, getFaction(msg.sender));
     }
 
-    function joinAndMint(uint256 _faction) external {
-        joinFaction(_faction);
-        mintCharacter();
-    }
-
     function goOnQuest() external {
         require(
             gameItemsContract.balanceOf(msg.sender, getFaction(msg.sender)) == 1,
@@ -152,6 +147,7 @@ contract Player is VRFConsumerBaseV2, Ownable {
         address player = randomIdToRequestor[requestId];
 
         random = (randomWords[0] % 1000) + 1;
+        players[player].characterFullofRewards = false;
 
         if (random >= 800) {
             gameItemsContract.mintVaultParts(player, 5);
@@ -164,8 +160,6 @@ contract Player is VRFConsumerBaseV2, Ownable {
         } else if (random < 200) {
             gameItemsContract.mintVaultParts(player, 1);
         }
-
-        players[player].characterFullofRewards = false;
     }
 
     function getFaction(address _recipient) public view returns (uint256) {
