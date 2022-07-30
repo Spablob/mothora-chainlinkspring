@@ -104,7 +104,9 @@ contract MothoraVault is Ownable, ReentrancyGuard, ERC1155Holder {
         // World level maxedfactors calculation
         uint256 maxedFactor1;
         for (uint256 i = 1; i <= playerId; i++) {
-            maxedFactor1 += stakedESSBalance[playerAddresses[i - 1]] * _calculateTimeTier(playerAddresses[i - 1]);
+            if (stakedESSBalance[playerAddresses[i - 1]] > 0) {
+                maxedFactor1 += stakedESSBalance[playerAddresses[i - 1]] * _calculateTimeTier(playerAddresses[i - 1]);
+            }
         }
 
         uint256 maxedFactor2 = totalVaultPartsContributed;
@@ -116,23 +118,29 @@ contract MothoraVault is Ownable, ReentrancyGuard, ERC1155Holder {
             factionPartsBalance[3];
 
         // Distributes the rewards
-        for (uint256 i = 1; i <= playerId; i++) {
-            uint256 factor1 = (stakedESSBalance[playerAddresses[i - 1]] * _calculateTimeTier(playerAddresses[i - 1]));
-            uint256 factor2 = playerStakedPartsBalance[playerAddresses[i - 1]];
-            uint256 factor3 = factionPartsBalance[playerContract.getFaction(playerAddresses[i - 1])];
+        if (maxedFactor2 > 0) {
+            for (uint256 i = 1; i <= playerId; i++) {
+                if (stakedESSBalance[playerAddresses[i - 1]] > 0) {
+                    uint256 factor1 = (stakedESSBalance[playerAddresses[i - 1]] *
+                        _calculateTimeTier(playerAddresses[i - 1]));
+                    uint256 factor2 = playerStakedPartsBalance[playerAddresses[i - 1]];
+                    uint256 factor3 = factionPartsBalance[playerContract.getFaction(playerAddresses[i - 1])];
 
-            RewardsBalance[playerAddresses[i - 1]] +=
-                divider(factor1 * 70 * epochRewards, maxedFactor1 * 100, 0) +
-                divider(factor2 * 25 * epochRewards, maxedFactor2 * 100, 0) +
-                divider(factor3 * 5 * epochRewards, maxedFactor3 * 100, 0);
+                    RewardsBalance[playerAddresses[i - 1]] +=
+                        divider(factor1 * 70 * epochRewards, maxedFactor1 * 100, 0) +
+                        divider(factor2 * 25 * epochRewards, maxedFactor2 * 100, 0) +
+                        divider(factor3 * 5 * epochRewards, maxedFactor3 * 100, 0);
+                }
+            }
+
+            lastDistributionTime = block.timestamp;
         }
-
-        lastDistributionTime = block.timestamp;
     }
 
     function claimEpochRewards(bool autocompound) external {
         if (autocompound) {
             _stakeTokens(RewardsBalance[msg.sender]);
+            RewardsBalance[msg.sender] = 0;
         } else {
             uint256 transferValue = RewardsBalance[msg.sender];
             RewardsBalance[msg.sender] = 0;
