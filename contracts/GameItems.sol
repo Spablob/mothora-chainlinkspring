@@ -54,8 +54,4 @@ contract GameItems is ERC1155, Ownable {
         require(bytes(_uris[tokenId]).length == 0, "Cannot set uri twice.");
         _uris[tokenId] = NFTuri;
     }
-
-    function approveStakeVaultParts(address operator) external {
-        _setApprovalForAll(_msgSender(), operator, true);
-    }
 }
